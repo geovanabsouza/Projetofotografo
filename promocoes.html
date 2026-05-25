@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -25,30 +27,45 @@
             </div>
 
             <ul class="menu" id="menu">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Área do cliente</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="logcliente.html">Área do cliente</a></li>
             </ul>
 
         </nav>
     </header>
 
     <main>
-        <section>
-            <img src="img/bannerpacotes.png" alt="">
-        </section>
-        <h1>ANA BIA</h1>
+
+
     </main>
 
-    <footer>
+    <footer class="footer">
+    <h2>Rafael Lima Fotografia</h2>
+    <p>
+        Capturando momentos únicos e transformando memórias em arte.
+    </p>
+    <div class="socials">
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+    <span>
+        © 2026 Todos os direitos reservados.
+    </span>
         <script>
         function toggleMenu(){
             document.getElementById("menu")
             .classList.toggle("active");
         }
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </footer>
     
 </body>
