@@ -1,0 +1,221 @@
+
+h1{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*PÁGINA DO HOME*/
+/*NAVBAR*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    padding: 15px 25px;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+
+    list-style: none;
+}
+
+.menu a{
+    color: #4682B4;
+    text-decoration: none;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.hamburguer{
+    display: none;
+
+    font-size: 30px;
+    color: #4682B4;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px){
+
+    .hamburguer{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+
+        flex-direction: column;
+
+        position: absolute;
+        top: 80px;
+        right: 0;
+
+        background-color: white;
+
+        width: 200px;
+        padding: 20px;
+    }
+
+    .menu.active{
+        display: flex;
+    }
+}
+
+/*BANNER CASAL*/
+
+.bannercasal img{
+    width: 100%;
+}
+
+/*MAIN*/
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 5%;
+}
+
+
+.ppresentation{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*SOBRE*/
+
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 8%;
+    flex-wrap: wrap;
+}
+
+.rafael{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.rafael img{
+    width: 100%;
+    max-width: 450px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #4682B4;
+}
+
+.sobreele{
+    flex: 1;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 2;
+}
+
+@media (max-width:768px){
+    .grid{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobreele{
+        text-align: center;
+    }
+    .rafael img{
+        height: auto;
+    }
+}
+
+/*INFOS*/
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 20px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.info-box{
+    background-color: white;
+    width: 230px;
+    padding: 35px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px #4682B4;
+    transition: 0.3s;
+}
+
+.info-box:hover{
+    transform: translateY(-8px);
+}
+
+.icon{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.info-box h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-box p{
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    color: #666;
+}
+
+/*BANNER*/
+
+.banner img{
+    margin-top: 5%;
+    width: 100%;
+}
+
+/*PROMOÇÕES*/
+
+.promocoes{
+    text-align: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+/*PÁGINA DO LOGCLIENTE*/
+
+/*PÁGINA ÁREA DO CLIENTE*/
+
+/*PÁGINA DO PORTFOLIO*/
+
+/*PÁGINA DE PROMOÇÕES*/
+
+
+/*PÁGINA DO FORMS DE PROMOÇÕES*/
+
+
