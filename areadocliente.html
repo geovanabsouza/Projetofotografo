@@ -33,6 +33,9 @@
             </ul>
 
         </nav>
+        <button id="backToTop">
+            ↑
+        </button>
     </header>
 
     <main>
@@ -76,6 +79,25 @@
         }
         </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const backToTop = document.getElementById("backToTop");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add("show");
+                } else {
+                    backToTop.classList.remove("show");
+                }
+            });
+
+            backToTop.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+            });
+
+        </script>
     </footer>
     
 </body>
