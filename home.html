@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rafael Lima</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="img/logorl.png" alt="Logo">
+            </div>
+
+            <div class="hamburguer" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <ul class="menu" id="menu">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="promocoes.html">Pacotes</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="logcliente.html">Área do cliente</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="bannercasal">
+            <img src="img/bannercasal.jpeg" alt="">
+        </section>
+        
+        <section class="presentation">
+            <h1 class="bem-vindo"> SEJA BEM-VINDO!</h1>
+            <p class="ppresentation"> ENSAIOS | CASAMENTOS | EVENTOS</p>
+        </section>
+
+        <section class="grid">
+
+            <div class="rafael">
+                <img src="img/rafael.jpeg" alt="fotógrafo">
+            </div>
+
+            <div id="sobre" class="sobreele">
+                <h1>QUEM EU SOU?</h1>
+                <p>Rafael Lima é um fotógrafo profissional especializado em casamentos, eventos sociais e ensaios fotográficos. Seu trabalho busca eternizar momentos únicos de forma autêntica e emocionante. Cada fotografia é produzida com atenção aos detalhes, valorizando sentimentos, conexões e memórias que merecem ser lembradas para sempre.</p>
+                <p>Atuando de forma autônoma, Rafael construiu sua trajetória através da dedicação e da confiança de seus clientes, conquistados principalmente por indicações e pela qualidade de seu trabalho. Seu objetivo é oferecer uma experiência acolhedora e profissional em cada projeto, desde o primeiro contato até a entrega final das fotografias.</p>
+            </div>
+
+        </section>
+
+        <section class="infos">
+            <div class="info-box">
+                <h2>+10</h2>
+                <p>Anos de experiência</p>
+            </div>
+            
+            <div class="info-box">
+                <h2>+300</h2>
+                <p>Momentos registrados</p>
+            </div>
+            
+            <div class="info-box">
+                <h2>+150</h2>
+                <p>Casamentos fotografados</p>
+            </div>
+            
+            <div class="info-box">
+                <h2>100%</h2>
+                <p>Clientes satisfeitos</p>
+            </div>
+        </section>
+        <section class="banner">
+            <img src="img/banner.png" alt="">
+        </section>
+
+        <section class="promocoes">
+
+            <h1>PROMOÇÕES</h1>
+            <P>ANA, AQUI EMBAIXO VC POE UMAS 3 PROMOCOES DA SUA PAGINA</P>
+
+            <h1>PERSONALIZE O SEU PEDIDO!</h1>
+            <p>Clique no botão abaixo para adquirir mais informações sobre as nossas ofertas especiais!</p>
+
+            <div class="btn-areapromocoes">
+                <a href="promocoes.html" class="btnpromocoes">Acesse aqui</a>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h1 class="port">PORTFÓLIO</h1>
+            <div class="gallery">
+                <img src="img/Boda en iglesia.jpg">
+                <img src="img/casamento da tia ❤️.jpg">
+                <img src="img/casamento.jpeg">
+                <img src="img/download (1).jpg">
+                <img src="img/download (2).jpg">
+                <img src="img/download (3).jpg">
+                <img src= "img/Sydni Rose Photo.jpg">
+                <img src="img/🤍🙏🏼.jpg">
+            </div>
+
+            <div class="btn-area">
+                <a href="portfolio.html" class="btn">Veja Mais</a>
+            </div>
+        </section>
+
+        <section  id="dep" class="depoimentos">
+            
+            <h1>DEPOIMENTOS</h1>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="card">
+                        <p>“As fotos ficaram perfeitas.”</p>
+                        <h3>Mariana Silva</h3>
+                     </div>
+                     <div class="card">
+                        <p>“Experiência incrível.”</p>
+                        <h3>Rafael Costa</h3>
+                    </div>
+                    <div class="card">
+                        <p>“Muito profissional.”</p>
+                        <h3>Juliana Alves</h3>
+                    </div>
+
+                    <!-- DUPLICA OS CARDS -->
+                     <div class="card">
+                        <p>“As fotos ficaram perfeitas.”</p>
+                        <h3>Mariana Silva</h3>
+                    </div>
+                    <div class="card">
+                        <p>“Experiência incrível.”</p>
+                        <h3>Rafael Costa</h3>
+                    </div>
+                    <div class="card">
+                        <p>“Muito profissional.”</p>
+                    <h3>Juliana Alves</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <h1>Rafael Lima Fotografia</h1>
+        <p>
+            Capturando momentos únicos e transformando memórias em arte.
+        </p>
+        <div class="socials">
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>
+        <span>
+            © 2026 Todos os direitos reservados.
+        </span>
+            <script>
+            function toggleMenu(){
+                document.getElementById("menu")
+                .classList.toggle("active");
+            }
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        </footer>
+    
+</body>
+</html>

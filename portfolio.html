@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rafael Lima</title>
+</head>
+<body>
+    <!-- HERO COM VIDEO -->
+  <section class="hero">
+
+    <video autoplay muted loop playsinline class="video-bg">
+      <source src="videoplayback.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>CAPTURANDO MOMENTOS</h1>
+      <p>Fotografia • Casamentos • Eventos</p>
+    </div>
+
+    <!-- BOTÃO -->
+    <a href="#site-content" class="scroll-btn">
+      ↓
+    </a>
+
+              
+        </section>
+    <header id="site-content">
+        <nav class="navbarportfolio">
+
+            <div class="logo">
+                <img src="img/logorl.png" alt="Logo">
+            </div>
+
+            <div class="hamburguer" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <ul class="menuportfolio" id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="promocoes.html">Pacotes</a></li>
+                <li><a href="logcliente.html">Área do cliente</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+   
+        <section class="portfolio">
+            <h1 class="port">PORTFÓLIO</h1>
+            <div class="gallery">
+                <img src="img/Boda en iglesia.jpg">
+                <img src="img/casamento da tia ❤️.jpg">
+                <img src="img/casamento.jpeg">
+                <img src="img/download (1).jpg">
+                <img src="img/download (2).jpg">
+                <img src="img/download (3).jpg">
+                <img src= "img/Sydni Rose Photo.jpg">
+                <img src="img/🤍🙏🏼.jpg">
+            </div>
+
+            
+        </section>
+
+        <section>
+            <h1>JÁ TEVE UMA EXPERIÊNCIA CONOSCO?</h1>
+            <p class="pp">Encontre sua galeria pessoal no link abaixo.</p>
+
+            <div class="btn-areapromocoes">
+                <a href="logcliente.html" class="btnpromocoes">Sua galeria pessoal</a>
+            </div>
+        </section>
+
+        <section class="gridportfolio">
+
+            <div class="rafael">
+                <img src="img/rafael.jpeg" alt="fotógrafo">
+            </div>
+
+            <div id="sobre" class="sobreele">
+                <h1>QUEM EU SOU?</h1>
+                <p>Rafael Lima é um fotógrafo profissional especializado em casamentos, eventos sociais e ensaios fotográficos. Seu trabalho busca eternizar momentos únicos de forma autêntica e emocionante. Cada fotografia é produzida com atenção aos detalhes, valorizando sentimentos, conexões e memórias que merecem ser lembradas para sempre.</p>
+                <p>Atuando de forma autônoma, Rafael construiu sua trajetória através da dedicação e da confiança de seus clientes, conquistados principalmente por indicações e pela qualidade de seu trabalho. Seu objetivo é oferecer uma experiência acolhedora e profissional em cada projeto, desde o primeiro contato até a entrega final das fotografias.</p>
+            </div>
+
+        </section>
+
+        <section class="gridportfolio">
+            <div id="sobre" class="sobreele">
+                <h1>QUEM EU SOU?</h1>
+                <p>Rafael Lima é um fotógrafo profissional especializado em casamentos, eventos sociais e ensaios fotográficos. Seu trabalho busca eternizar momentos únicos de forma autêntica e emocionante. Cada fotografia é produzida com atenção aos detalhes, valorizando sentimentos, conexões e memórias que merecem ser lembradas para sempre.</p>
+                <p>Atuando de forma autônoma, Rafael construiu sua trajetória através da dedicação e da confiança de seus clientes, conquistados principalmente por indicações e pela qualidade de seu trabalho. Seu objetivo é oferecer uma experiência acolhedora e profissional em cada projeto, desde o primeiro contato até a entrega final das fotografias.</p>
+            </div>
+
+            <div class="rafael">
+                <img src="img/rafael.jpeg" alt="fotógrafo">
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+    <h2>Rafael Lima Fotografia</h2>
+    <p>
+        Capturando momentos únicos e transformando memórias em arte.
+    </p>
+    <div class="socials">
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+    </div>
+    <span>
+        © 2026 Todos os direitos reservados.
+    </span>
+        <script>
+        function toggleMenu(){
+            document.getElementById("menu")
+            .classList.toggle("active");
+        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </footer>
+    
+</body>
+</html>
