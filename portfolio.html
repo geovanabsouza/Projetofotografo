@@ -69,17 +69,36 @@
 
         <section class="portfolio">
             <h1 class="port">PORTFÓLIO</h1>
-            <div class="gallery">
-                <img src="img/Boda en iglesia.jpg">
-                <img src="img/casamento da tia ❤️.jpg">
-                <img src="img/casamento.jpeg">
-                <img src="img/download (1).jpg">
-                <img src="img/download (2).jpg">
-                <img src="img/download (3).jpg">
-                <img src="img/Sydni Rose Photo.jpg">
-                <img src="img/🤍🙏🏼.jpg">
+
+            <div class="filter-buttons">
+                <button data-filter="all" class="active">
+                    Todos
+                </button>
+                <button data-filter="casamento">
+                    Casamentos
+                </button>
+                <button data-filter="evento">
+                    Eventos
+                </button>
+                <button data-filter="ensaio">
+                    Ensaios
+                </button>
             </div>
 
+            <div class="gallery">
+                <div class="photo casamento">
+                    <img src="img1.jpg">
+                </div>
+                <div class="photo evento">
+                    <img src="img2.jpg">
+                </div>
+                <div class="photo ensaio">
+                    <img src="img3.jpg">
+                </div>
+                <div class="photo casamento">
+                    <img src="img4.jpg">
+                </div>
+            </div>
 
         </section>
 
@@ -204,6 +223,30 @@
 
             });
 
+        </script>
+        <script>
+        const buttons = document.querySelectorAll(".filter-buttons button");
+        const photos = document.querySelectorAll(".photo");
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                // REMOVE ACTIVE
+                buttons.forEach(btn => btn.classList.remove("active"));
+                // ADICIONA ACTIVE
+                button.classList.add("active");
+                const filter = button.getAttribute("data-filter");
+                photos.forEach(photo => {
+                    if(filter === "all"){
+                        photo.style.display = "block";
+                    } else {
+                        if(photo.classList.contains(filter)){
+                            photo.style.display = "block";
+                        } else {
+                            photo.style.display = "none";
+                        }
+                    }
+                });
+            });
+        });
         </script>
     </footer>
 
