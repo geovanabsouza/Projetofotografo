@@ -139,6 +139,91 @@ p {
     }
 }
 
+.navbarportfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #abb48d;
+    padding: 5px;
+}
+
+.logo {
+    margin-left: 3%;
+}
+
+.logo img {
+    width: 70px;
+
+}
+
+.menuportfolio {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 5%;
+}
+
+.menuportfolio a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+}
+
+.menuportfolio :hover {
+    color: #55564a;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.hamburguerportfolio {
+    display: none;
+    font-size: 30px;
+    color: #55564a;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .navbarportfolio {
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .hamburguerportfolio {
+        display: block;
+        font-size: 2rem;
+        color: #55564a;
+        cursor: pointer;
+    }
+
+    .menuportfolio {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 250px;
+        padding: 25px;
+        background-color: #abb48d;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+    }
+    .menuportfolio.active {
+        display: flex;
+    }
+    .menuportfolio li {
+        width: 100%;
+        text-align: center;
+    }
+    .menuportfolio a {
+        display: block;
+        padding: 10px;
+    }
+}
+
 /*BANNER CASAL*/
 
 .bannercasal {
