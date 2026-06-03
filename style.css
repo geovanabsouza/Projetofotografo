@@ -123,7 +123,8 @@ p {
 /*BANNER CASAL*/
 
 .bannercasal {
-    width: 100%;
+     width: 300px;
+  height: auto; 
 }
 
 /* Cada slide */
@@ -1462,3 +1463,131 @@ body {
     background-color: #2f5f96;
     color: #100303;
 }
+
+.hero-pacotes{
+    height: 80vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.35)
+        ),
+        url("img/imgpacote.png");
+
+    background-size: cover;
+    background-position: center;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+.orcamento-rapido{
+
+    max-width:1100px;
+
+    margin:-70px auto 80px #abb48d; 
+
+    background:rgb(255, 255, 255);
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    position:relative;
+    z-index:10;
+}
+
+.orcamento-rapido form{
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.orcamento-rapido input{
+
+    flex:1;
+    min-width:220px;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+}
+
+.orcamento-rapido button{
+
+    width:auto;
+
+    padding:15px 35px;
+
+    background:#717958;
+    color:white;
+}
+
+.servicos{
+
+    background:#abb48d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 8%;
+}
+
+.servicos-grid{
+
+    display:flex;
+
+    gap:30px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    margin-top:50px;
+}
+
+.servico-card{
+
+    background:white;
+
+    color:black;
+
+    width:320px;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.servico-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.servico-card i{
+
+    font-size:50px;
+
+    color:#4682B4;
+
+    margin-bottom:20px;
+}
+
+.preco {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #050504;
+    font-family: "Cormorant Garamond", serif;
+}
+#abb48d
