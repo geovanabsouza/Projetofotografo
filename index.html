@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Rafael Lima</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="img/logorl.png" alt="Logo">
+            </div>
+
+            <div class="hamburguer" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <ul class="menu" id="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="promocoes.html">Pacotes</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="#dep">Depoimentos</a></li>
+                <li><a href="logcliente.html">Área do cliente</a></li>
+            </ul>
+
+        </nav>
+        <button id="backToTop">
+            ↑
+        </button>
+    </header>
+
+    <main>
+
+        <section class="bannercasal">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/banner3.jpg" alt="Banner 1">
+
+                <div class="banner-text">
+                    <h1>Seja bem-vindo!</h1>
+                    <p>Ensaios • Casamentos • Eventos</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/banner2.jpg" alt="Banner 2">
+
+                <div class="banner-text">
+                    <h1>Seja bem-vindo!</h1>
+                    <p>Ensaios • Casamentos • Eventos</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/banner1.webp" alt="Banner 3">
+
+                <div class="banner-text">
+                    <h1>Seja bem-vindo!</h1>
+                    <p>Ensaios • Casamentos • Eventos</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+</section>
+   
+
+
+        <section class="grid">
+
+            <div class="rafael">
+                <img src="img/rafael.jpeg" alt="fotógrafo">
+            </div>
+
+            <div id="sobre" class="sobreele">
+                <h1>QUEM EU SOU?</h1>
+                <p>Rafael Lima é um fotógrafo profissional especializado em casamentos, eventos sociais e ensaios
+                    fotográficos. Seu trabalho busca eternizar momentos únicos de forma autêntica e emocionante. Cada
+                    fotografia é produzida com atenção aos detalhes, valorizando sentimentos, conexões e memórias que
+                    merecem ser lembradas para sempre.</p>
+                <p>Atuando de forma autônoma, Rafael construiu sua trajetória através da dedicação e da confiança de
+                    seus clientes, conquistados principalmente por indicações e pela qualidade de seu trabalho. Seu
+                    objetivo é oferecer uma experiência acolhedora e profissional em cada projeto, desde o primeiro
+                    contato até a entrega final das fotografias.</p>
+            </div>
+
+        </section>
+
+        <section class="infos">
+            <div class="info-box">
+                <h2>+10</h2>
+                <p>Anos de experiência</p>
+            </div>
+
+            <div class="info-box">
+                <h2>+300</h2>
+                <p>Momentos registrados</p>
+            </div>
+
+            <div class="info-box">
+                <h2>+150</h2>
+                <p>Casamentos fotografados</p>
+            </div>
+
+            <div class="info-box">
+                <h2>100%</h2>
+                <p>Clientes satisfeitos</p>
+            </div>
+        </section>
+
+        <section class="promocoes">
+            <div class="banner">
+                <img src= "img/imagemhome.png" alt="">
+            </div>
+
+            <h1>PROMOÇÕES</h1>
+            <h1 class="pacotes-title">
+                NOSSOS PACOTES:
+            </h1>
+    
+            <div class="pacotes-grid">
+    
+                <div class="pacote-card">
+                    <h3>Plano Essencial</h3>
+                    <div class="pacote-preco">
+                        R$ 500
+                    </div>
+                    <ul>
+                        <li>1 fotógrafo</li>
+                        <li>Até 2 horas de cobertura</li>
+                        <li>30 fotos editadas</li>
+                    </ul>
+                    <a href="pedido.html" class="pacote-btn">
+                        Enviar pedido
+                    </a>
+    
+                </div>
+
+                <div class="pacote-card">
+                    <h3>Plano Premium</h3>
+                    <div class="pacote-preco">
+                        R$ 1200
+                    </div>
+                    <ul>
+                        <li>Ensaio Pré-Wedding</li>
+                        <li>4 horas de cobertura</li>
+                        <li>100 fotos editadas</li>
+                    </ul>
+                    <a href="pedido.html" class="pacote-btn">
+                        Enviar pedido
+                    </a>
+                </div>
+    
+                <div class="pacote-card">
+                    <h3>Plano Completo</h3>
+                    <div class="pacote-preco">
+                        R$ 2500
+                    </div>
+
+                    <ul>
+                        <li>Making Of</li>
+                        <li>Cerimônia completa</li>
+                        <li>Álbum digital</li>
+                    </ul>
+                    <a href="pedido.html" class="pacote-btn">
+                        Enviar pedido
+                    </a>
+    
+                </div>
+    
+            </div>
+
+            <div>
+                <h1>PERSONALIZE O SEU PEDIDO!</h1>
+                <p>Clique no botão abaixo para adquirir mais informações sobre as nossas ofertas especiais!</p>
+                
+                <div class="btn-areapromocoes">
+                    <a href="promocoes.html" class="btnpromocoes">Acesse aqui</a>
+                </div>
+            </div>
+        </section>
+
+    <section class="portfolio">
+        <h1 class="port">PORTFÓLIO</h1>
+        <div class="filters">
+            <button class="active" data-filter="all">Todos</button>
+            <button data-filter="casamento">Casamentos</button>
+            <button data-filter="ensaio">Ensaios</button>
+            <button data-filter="evento">Eventos</button>
+        </div>
+        <div class="gallery">
+            <!-- CASAMENTOS -->
+            <div class="item casamento">
+                <img src="img/casamentos/casamentos.jpg" alt="">
+            </div>
+
+            <div class="item casamento">
+                <img src="img/casamentos/como-fazer-um-casamento-simples.jpg" alt="">
+            </div>
+
+            <div class="item casamento">
+                <img src="img/casamentos/espaco-para-mini-weedding-e-casamentos-em-sp-vila-leopoldina27.webp" alt="">
+            </div>
+
+            <div class="item casamento">
+                <img src="img/casamentos/IMG_6332.jpg" alt="">
+            </div>
+
+            <div class="item casamento">
+                <img src="img/casamentos/tendencia-de-cor-para-casamento-2025-1-1024x1024.webp" alt="">
+            </div>
+
+            <div class="item casamento">
+                <img src="img/casamentos/4-dicas-para-casamentos-na-primavera.jpg" alt="">
+            </div>
+            
+            <!-- ENSAIOS -->
+            <div class="item ensaio">
+                <img src="img/ensaios/8a6440bb79a1b668a2b81a1f273d7a97.jpg" alt="">
+            </div>
+
+            <div class="item ensaio">
+                <img src="img/ensaios/a8b5bd5435e2589dc153c316c4b6eff1.jpg" alt="">
+            </div>
+
+            <div class="item ensaio">
+                <img src="img/ensaios/ensaio-fotografico_ensnamorados0806190628_6.jpg" alt="">
+            </div>
+
+            <div class="item ensaio">
+                <img src="img/ensaios/ensaios-fotograficos-capture-momentos-incriveis-com-estilo-e-elegancia.jpg" alt="">
+            </div>
+
+            <div class="item ensaio">
+                <img src="img/ensaios/fa72ac103564b33fdcb7ccefebfb753d.jpg" alt="">
+            </div>
+
+            <div class="item ensaio">
+                <img src="img/ensaios/hd-22.jpg" alt="">
+            </div>
+
+            <!-- EVENTOS -->
+            <div class="item evento">
+                <img src="img/eventos/1766954133184-j2ny2gin53q.png" alt="">
+            </div>
+
+            <div class="item evento">
+                <img src="img/eventos/4d6f9a5520ad4be423fd05d7dbea90c8.webp" alt="">
+            </div>
+
+            <div class="item evento">
+                <img src="img/eventos/culture-and-events-1-768x959.jpg" alt="">
+            </div>
+
+            <div class="item evento">
+                <img src="img/eventos/idvS4iFymko1iJwNP43V0YI7mB1CQoaHGwSHpZ3d.jpeg" alt="">
+            </div>
+
+            <div class="item evento">
+                <img src="img/eventos/planificador-de-bodas-femenino-trabajando-en-una-ceremonia-1-scaled.jpg" alt="">
+            </div>
+
+            <div class="item evento">
+                <img src="img/eventos/salo-n-mirador.jpg" alt="">
+            </div>
+        </div>
+        <div class="btn-portfolio">
+            <a href="portfolio.html" class="btnportfolio">Veja Mais</a>
+        </div>
+    </section>
+
+        <section id="dep" class="depoimentos">
+
+            <h1>DEPOIMENTOS</h1>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="card">
+                        <p>“As fotos ficaram perfeitas.”</p>
+                        <h3>Mariana Silva</h3>
+                    </div>
+                    <div class="card">
+                        <p>“Experiência incrível.”</p>
+                        <h3>Rafael Costa</h3>
+                    </div>
+                    <div class="card">
+                        <p>“Muito profissional.”</p>
+                        <h3>Juliana Alves</h3>
+                    </div>
+
+                    <!-- DUPLICA OS CARDS -->
+                    <div class="card">
+                        <p>“As fotos ficaram perfeitas.”</p>
+                        <h3>Mariana Silva</h3>
+                    </div>
+                    <div class="card">
+                        <p>“Experiência incrível.”</p>
+                        <h3>Rafael Costa</h3>
+                    </div>
+                    <div class="card">
+                        <p>“Muito profissional.”</p>
+                        <h3>Juliana Alves</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1>Rafael Lima Fotografia</h1>
+        <p>
+            Capturando momentos únicos e transformando memórias em arte.
+        </p>
+        <div class="socials">
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>
+        <span>
+            © 2026 Todos os direitos reservados.
+        </span>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
