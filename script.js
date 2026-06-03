@@ -5,6 +5,27 @@ function toggleMenu() {
         .classList.toggle("active");
 }
 
+//LOGIN FALSO
+
+function login(event) {
+    event.preventDefault();
+
+    const senha = document.getElementById("senha").value;
+    const erro = document.getElementById("erro");
+
+    if (senha === "anaelucas") {
+
+        // redireciona para a galeria
+        window.location.href = "areadocliente.html";
+
+    } else {
+
+        erro.textContent = "Senha incorreta!";
+        erro.style.color = "red";
+
+    }
+}
+
 // BOTÃO VOLTAR AO TOPO
 const backToTop = document.getElementById("backToTop");
 
