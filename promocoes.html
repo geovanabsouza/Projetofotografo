@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <title>Rafael Lima</title>
+
+    <title>Pacotes e Agendamento | Rafael Lima Fotografia</title>
 </head>
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
+
         <nav class="navbar">
 
             <div class="logo">
-                <img src="img/logotipo2.png" alt="Logo">
+                <img src="img/logotipo2.png" alt="Logo Rafael Lima">
             </div>
 
             <div class="hamburguer" onclick="toggleMenu()">
@@ -36,25 +36,22 @@
             <ul class="menu" id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="logcliente.html">Área do cliente</a></li>
+                <li><a href="logcliente.html">Área do Cliente</a></li>
             </ul>
 
         </nav>
 
-        <button id="backToTop">
-            ↑
-        </button>
     </header>
 
     <main>
+
+        <!-- HERO -->
 
         <section class="hero-pacotes">
 
             <div class="hero-overlay">
 
-                <h1>
-                    Eternize seus momentos
-                </h1>
+                <h1>Eternize Seus Momentos</h1>
 
                 <p>
                     Pacotes exclusivos para transformar emoções em memórias.
@@ -64,87 +61,156 @@
 
         </section>
 
+        <!-- PACOTES -->
+
+        <section class="servicos">
+
+            <h2>Pacotes Personalizados, Memórias Únicas</h2>
+
+            <p>
+                Escolha o plano ideal para registrar seu momento especial.
+            </p>
+
+            <div class="servicos-grid">
+
+                <div class="servico-card">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                    <h3>Pacote Essencial</h3>
+
+                    <span class="preco">R$ 499</span>
+
+                    <p>
+                        Cobertura compacta para ensaios, aniversários e eventos menores.
+                    </p>
+
+                </div>
+
+                <div class="servico-card">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h3>Pacote Premium</h3>
+
+                    <span class="preco">R$ 899</span>
+
+                    <p>
+                        Mais horas de cobertura, mais fotos editadas e entrega ampliada.
+                    </p>
+
+                </div>
+
+                <div class="servico-card">
+
+                    <i class="fa-solid fa-ring"></i>
+
+                    <h3>Pacote Casamento</h3>
+
+                    <span class="preco">R$ 1.499</span>
+
+                    <p>
+                        Cobertura completa da cerimônia, recepção e momentos especiais.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FORMULÁRIO -->
+
         <section class="orcamento-rapido">
 
-            <h2>Solicite seu orçamento</h2>
+            <h2>Solicite Seu Orçamento</h2>
 
-            <form>
+            <form class="form-agendamento">
 
                 <input
                     type="text"
-                    placeholder="Seu nome">
+                    name="nome"
+                    placeholder="Nome Completo"
+                    required>
 
                 <input
                     type="email"
-                    placeholder="Seu e-mail">
+                    name="email"
+                    placeholder="E-mail"
+                    required>
 
                 <input
-                    type="date">
+                    type="tel"
+                    name="telefone"
+                    placeholder="WhatsApp">
 
-                <button type="submit">
-                    Solicitar
+                <input
+                    type="date"
+                    name="data"
+                    required>
+
+                <select name="horario" required>
+
+                    <option value="">
+                        Escolha um Horário
+                    </option>
+
+                    <option>08:00</option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+
+                </select>
+
+                <select name="pacote" required>
+
+                    <option value="">
+                        Escolha um Pacote
+                    </option>
+
+                    <option>Pacote Essencial</option>
+                    <option>Pacote Premium</option>
+                    <option>Pacote Casamento</option>
+                    <option>Pacote Personalizado</option>
+
+                </select>
+
+                <input
+                    type="text"
+                    name="local"
+                    placeholder="Local do Evento">
+
+                <input
+                    type="text"
+                    name="tipo"
+                    placeholder="Tipo de Evento (Casamento, Ensaio, Aniversário...)">
+
+                <textarea
+                    name="informacoes"
+                    placeholder="Conte mais sobre seu evento, momentos especiais que deseja registrar, quantidade de convidados ou qualquer detalhe importante."></textarea>
+
+                <textarea
+                    name="observacoes"
+                    placeholder="Observações adicionais"></textarea>
+
+                <button type="button"
+                onclick="window.location.href='logcliente.html'">
+                    Solicitar Orçamento
+
                 </button>
 
             </form>
 
         </section>
 
-        <section class="servicos">
-
-            <h2>
-                Pacotes personalizados,
-                memórias únicas.
-            </h2>
-
-            <p>
-                Escolha o plano ideal para o seu evento.
-            </p>
-<div class="servicos-grid">
-
-    <div class="servico-card">
-        <i class="fa-solid fa-camera"></i>
-
-        <h3>Pacote Essencial</h3>
-
-        <span class="preco">
-            R$ 499
-        </span>
-
-        <p>
-            Cobertura compacta para momentos especiais.
-        </p>
-    </div>
-
-    <div class="servico-card">
-        <i class="fa-solid fa-heart"></i>
-
-        <h3>Pacote Premium</h3>
-
-        <span class="preco">
-            R$ 899
-        </span>
-
-        <p>
-            Mais horas, mais fotos e mais lembranças.
-        </p>
-    </div>
-
-    <div class="servico-card">
-        <i class="fa-solid fa-ring"></i>
-
-        <h3>Pacote Casamento</h3>
-
-        <span class="preco">
-            R$ 1.499
-        </span>
-
-        <p>
-            Cobertura completa do início ao fim.
-        </p>
-    </div>
-
-</div>
     </main>
+
+    <!-- FOOTER -->
 
     <footer class="footer">
 
@@ -155,6 +221,7 @@
         </p>
 
         <div class="socials">
+
             <a href="#">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
@@ -166,6 +233,7 @@
             <a href="#">
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
+
         </div>
 
         <span>
@@ -173,10 +241,8 @@
         </span>
 
     </footer>
-    <script defer src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
-</html>
