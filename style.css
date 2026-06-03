@@ -808,7 +808,7 @@ footer h1 {
     max-width: 1400px;
     margin: 0 auto;
     padding: 100px 8%;
-    background: #f5f5f5;
+    background: #fff8ee;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 120px 80px;
