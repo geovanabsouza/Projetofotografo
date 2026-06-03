@@ -1464,6 +1464,8 @@ body {
     color: #100303;
 }
 
+/* HERO */
+
 .hero-pacotes{
     height: 80vh;
 
@@ -1476,7 +1478,7 @@ body {
 
     background-size: cover;
     background-position: center;
-    
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -1484,50 +1486,117 @@ body {
     position:relative;
 }
 
+.hero-overlay{
+    text-align:center;
+    color:white;
+}
+
+.hero-overlay h1{
+    color:white;
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-overlay p{
+    color:white;
+    font-size:1.2rem;
+}
+
+/* ORÇAMENTO COM FOTO DE FUNDO */
+
 .orcamento-rapido{
 
-    max-width:1100px;
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.50),
+            rgba(0,0,0,.50)
+        ),
+        url("img/noivos-fundo.jpg");
 
-    margin:-70px auto 80px #abb48d; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    background:rgb(255, 255, 255);
+    min-height: 80vh;
 
-    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-    border-radius:15px;
+    padding:80px 20px;
+}
 
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+.orcamento-rapido h2{
 
-    position:relative;
-    z-index:10;
+    color:white;
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:3rem;
+
+    margin-bottom:30px;
+
+    text-align:center;
 }
 
 .orcamento-rapido form{
 
+    width:100%;
+    max-width:700px;
+
+    background:rgba(255,255,255,.95);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
     display:flex;
-    gap:15px;
     flex-wrap:wrap;
+
+    gap:15px;
 }
 
 .orcamento-rapido input{
 
-    flex:1;
-    min-width:220px;
+    flex:1 1 300px;
 
     padding:15px;
 
     border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
 }
 
 .orcamento-rapido button{
 
-    width:auto;
+    width:100%;
 
-    padding:15px 35px;
+    padding:15px;
 
     background:#717958;
+
     color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
 }
+
+.orcamento-rapido button:hover{
+
+    background:#55564a;
+}
+
+/* SERVIÇOS */
 
 .servicos{
 
@@ -1566,6 +1635,8 @@ body {
     border-radius:15px;
 
     transition:.3s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
 }
 
 .servico-card:hover{
@@ -1577,17 +1648,27 @@ body {
 
     font-size:50px;
 
-    color:#4682B4;
+    color:#717958;
 
     margin-bottom:20px;
 }
 
-.preco {
-    display: block;
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 15px 0;
-    color: #050504;
-    font-family: "Cormorant Garamond", serif;
+.servico-card h3{
+
+    margin-bottom:10px;
 }
-#abb48d
+
+.preco{
+
+    display:block;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    margin:15px 0;
+
+    color:#717958;
+
+    font-family:"Cormorant Garamond", serif;
+}
