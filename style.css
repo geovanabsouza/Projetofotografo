@@ -1,3 +1,11 @@
+body{
+    background-color: #d2c2ad;
+}
+
+section{
+    background-color: #d2c2ad;
+}
+
 h1 {
     font-family: "Cormorant Garamond", serif;
     font-weight: 400;
@@ -49,7 +57,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #a6a99c;
     padding: 5px;
 }
 
@@ -70,14 +78,14 @@ p {
 }
 
 .menu a {
-    color: #4682B4;
+    color: white;
     text-decoration: none;
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
 }
 
 .menu :hover {
-    color: white;
+    color: #55564a;
 }
 
 /* BOTÃO HAMBÚRGUER */
@@ -98,15 +106,11 @@ p {
 
     .menu {
         display: none;
-
         flex-direction: column;
-
         position: absolute;
         top: 80px;
         right: 0;
-
         background-color: white;
-
         width: 200px;
         padding: 20px;
     }
@@ -130,7 +134,6 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: white;
     padding: 5%;
 }
 
@@ -183,11 +186,9 @@ p {
         flex-direction: column;
         text-align: center;
     }
-
     .sobreele {
         text-align: center;
     }
-
     .rafael img {
         height: auto;
     }
@@ -201,7 +202,6 @@ p {
     align-items: center;
     gap: 40px;
     padding: 80px 20px;
-    background-color: white;
     flex-wrap: wrap;
 }
 
@@ -278,7 +278,7 @@ p {
 
 .portfolio {
     padding: 80px 5%;
-    background: #783B0E;
+    background: #a6a99c;
 }
 
 .port {
@@ -325,7 +325,6 @@ p {
 
 .depoimentos {
     padding: 80px 0;
-    background: white;
     overflow: hidden;
 }
 
@@ -339,11 +338,10 @@ p {
 
 .slider {
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .slide-track {
-
     display: flex;
     gap: 20px;
     width: max-content;
@@ -352,14 +350,15 @@ p {
 
 .card {
     width: 350px;
-    background: #4682B4;
+    background: white;
     padding: 30px;
-    border-radius: 20px;
+    border: 2px solid #948d8d;;
+    border-radius: 20px ;
     flex-shrink: 0;
 }
 
 .card p {
-    color: white;
+    color: black;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -382,19 +381,22 @@ p {
 
 /*FOOTER*/
 .footer {
-    background: #111;
+    background: #55564a;
     padding: 60px 5%;
     text-align: center;
     color: white;
 }
 
+footer h1 {
+    color: white;
+}
 .footer h2 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
 .footer p {
-    color: #4682B4;
+    color: white;
     max-width: 500px;
     margin: 0 auto 30px;
     line-height: 1.6;
@@ -411,12 +413,12 @@ p {
 
     width: 50px;
     height: 50px;
-    background: #783B0E;
+    background: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #4682B4;
     font-size: 1.3rem;
     text-decoration: none;
     transition: 0.4s;
@@ -429,7 +431,7 @@ p {
 }
 
 .footer span {
-    color: #4682B4;
+    color: white;
     font-size: 0.9rem;
 }
 
@@ -890,6 +892,466 @@ body {
     color: black;
 }
 /*PÁGINA DE PROMOÇÕES*/
+/* HERO */
 
+.hero-pacotes {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background: white;
+}
+
+.hero-texto {
+    width: 35%;
+}
+
+.hero-texto p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    line-height: 1.4;
+    color: #222;
+}
+
+.hero-imagem {
+    width: 60%;
+}
+
+.hero-imagem img {
+    width: 100%;
+    display: block;
+}
+
+/* PACOTES */
+
+.pacotes-page {
+    padding: 80px 8%;
+}
+
+.pacotes-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.pacotes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pacote-card {
+    width: 260px;
+    min-height: 450px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d8e8ef;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.pacote-card:hover {
+    transform: translateY(-10px);
+}
+
+.pacote-card h3 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.pacote-preco {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.pacote-card ul {
+    flex: 1;
+    list-style: none;
+}
+
+.pacote-card li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.pacote-btn {
+    text-decoration: none;
+    text-align: center;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    color: black;
+
+    transition: 0.3s;
+}
+
+.pacote-btn:hover {
+    background: #4682B4;
+    color: white;
+}
+
+/* PROMOÇÃO */
+
+.promo-banner {
+    display: flex;
+
+    margin-top: 100px;
+
+    overflow: hidden;
+
+    border-radius: 35px;
+
+    background: #8d3a10;
+}
+
+.promo-img {
+    width: 45%;
+}
+
+.promo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-content {
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+.promo-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+.promo-content h3 {
+    font-size: 5rem;
+
+    margin-bottom: 20px;
+}
+
+.promo-content p {
+    font-size: 1.4rem;
+
+    margin-bottom: 15px;
+}
+
+.promo-content span {
+    margin-bottom: 30px;
+}
+
+.promo-btn {
+    padding: 15px 40px;
+
+    background: white;
+    color: #783B0E;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    transition: 0.3s;
+}
+
+.promo-btn:hover {
+    background: #4682B4;
+    color: white;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    .hero-pacotes {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-texto,
+    .hero-imagem {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-texto p {
+        font-size: 2rem;
+    }
+
+    .pacotes-title {
+        font-size: 3rem;
+    }
+
+    .promo-banner {
+        flex-direction: column;
+    }
+
+    .promo-img,
+    .promo-content {
+        width: 100%;
+    }
+
+    .promo-content h3 {
+        font-size: 3rem;
+    }
+}
 
 /*PÁGINA DO FORMS DE PROMOÇÕES*/
+
+/* ==========================================
+   PÁGINA DE AGENDAMENTO (VERSÃO COMPACTA E CENTRALIZADA)
+   ========================================== */
+
+.booking-container {
+    max-width: 700px; /* Reduzido de 1200px para 700px para juntar os elementos no centro */
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.booking-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Grid para Calendário e Horários aproximados */
+.datetime-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px; /* Espaço menor entre calendário e horários */
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .datetime-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Calendário Estático Ajustado */
+.calendar-box {
+    max-width: 320px;
+    margin: 0 auto; /* Mantém centralizado se quebrar linha */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.calendar-days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.day-name {
+    font-weight: bold;
+    color: #666;
+    font-size: 11px;
+}
+
+.weekend {
+    color: #d9534f;
+}
+
+.calendar-day {
+    padding: 6px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.calendar-day:hover:not(.empty) {
+    background-color: #eaddd3;
+}
+
+/* Grid de Horários mais juntinho */
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-content: start;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.time-btn {
+    background-color: #eaddd3;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0;
+}
+
+.time-btn:hover {
+    background-color: #783B0E;
+    color: white;
+}
+
+/* Formulários, Inputs e Textareas focados no centro */
+.form-section-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.textarea-beige {
+    width: 100%; /* Ocupa toda a largura do bloco central de 700px */
+    height: 100px;
+    background-color: #eaddd3;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    font-family: inherit;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Checkboxes mais próximos */
+.options-flex {
+    display: flex;
+    gap: 40px; /* Reduzido o espaço vazio do meio */
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.options-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.column-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #783B0E;
+    cursor: pointer;
+}
+
+.input-text-short {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 6px;
+    width: 100px;
+    font-size: 12px;
+}
+
+/* Linha separadora mais sutil */
+@media (min-width: 601px) {
+    .options-column:not(:last-child) {
+        border-right: 1px solid #eee;
+        padding-right: 20px;
+    }
+}
+
+/* Seção de Contatos alinhada */
+.input-contact-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-contact-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-contact-group input[type="text"],
+.input-contact-group input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-contact-group input::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+/* Botão de Envio */
+.btn-submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.btn-submit-beige {
+    background-color: #783B0E;
+    color: #f8f1f1;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 50px;
+    border: 1px solid #999;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit-beige:hover {
+    background-color: #2f5f96;
+    color: #100303;
+}

@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://jsdelivr.net"/>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link href="https://googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Rafael Lima</title>
+    <title>Rafael Lima - Agendamento</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-
             <div class="logo">
                 <img src="img/logorl.png" alt="Logo">
             </div>
@@ -32,13 +28,198 @@
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="logcliente.html">Área do cliente</a></li>
             </ul>
-
         </nav>
     </header>
 
     <main>
+        <!-- BANNER DE TOPO -->
+        <section class="bannercasal">
+            <img src="img/banner-casal.jpg" alt="Agende Seu Momento">
+        </section>
 
+        <!-- CONTAINER UNIFICADO DO FORMULÁRIO -->
+        <div class="booking-container">
+            <form action="#" method="POST">
+                
+                <!-- GRID: DATAS E HORÁRIOS -->
+                <div class="datetime-grid">
+                    
+                    <!-- 1. ESCOLHA A DATA -->
+                    <div class="calendar-box">
+                        <div class="booking-title">1. Escolha A Data :</div>
+                        <div class="calendar-header">
+                            <span>Maio</span>
+                            <span>2026</span>
+                        </div>
+                        <div class="calendar-days-grid">
+                            <span class="day-name">Se</span>
+                            <span class="day-name">Te</span>
+                            <span class="day-name">Qu</span>
+                            <span class="day-name">Qu</span>
+                            <span class="day-name">Se</span>
+                            <span class="day-name weekend">Sá</span>
+                            <span class="day-name weekend">Do</span>
+                            
+                            <!-- Primeira linha de dias -->
+                            <span class="calendar-day empty"></span>
+                            <span class="calendar-day empty"></span>
+                            <span class="calendar-day empty"></span>
+                            <span class="calendar-day empty"></span>
+                            <span class="calendar-day">1</span>
+                            <span class="calendar-day weekend">2</span>
+                            <span class="calendar-day weekend">3</span>
+                            
+                            <!-- Segunda linha -->
+                            <span class="calendar-day">4</span>
+                            <span class="calendar-day">5</span>
+                            <span class="calendar-day">6</span>
+                            <span class="calendar-day">7</span>
+                            <span class="calendar-day">8</span>
+                            <span class="calendar-day weekend">9</span>
+                            <span class="calendar-day weekend">10</span>
+                            
+                            <!-- Terceira linha -->
+                            <span class="calendar-day">11</span>
+                            <span class="calendar-day">12</span>
+                            <span class="calendar-day">13</span>
+                            <span class="calendar-day">14</span>
+                            <span class="calendar-day">15</span>
+                            <span class="calendar-day weekend">16</span>
+                            <span class="calendar-day weekend">17</span>
+                            
+                            <!-- Quarta linha -->
+                            <span class="calendar-day">18</span>
+                            <span class="calendar-day">19</span>
+                            <span class="calendar-day">20</span>
+                            <span class="calendar-day">21</span>
+                            <span class="calendar-day">22</span>
+                            <span class="calendar-day weekend">23</span>
+                            <span class="calendar-day weekend">24</span>
+                            
+                            <!-- Quinta linha -->
+                            <span class="calendar-day">25</span>
+                            <span class="calendar-day">26</span>
+                            <span class="calendar-day">27</span>
+                            <span class="calendar-day">28</span>
+                            <span class="calendar-day">29</span>
+                            <span class="calendar-day weekend">30</span>
+                            <span class="calendar-day weekend">31</span>
+                        </div>
+                    </div>
 
+                    <!-- 2. ESCOLHA O HORÁRIO -->
+                    <div>
+                        <div class="booking-title">2. Escolha O Horário:</div>
+                        <div class="time-slots">
+                            <button type="button" class="time-btn">8:00</button>
+                            <button type="button" class="time-btn">9:00</button>
+                            <button type="button" class="time-btn">10:00</button>
+                            
+                            <button type="button" class="time-btn">11:00</button>
+                            <button type="button" class="time-btn">13:00</button>
+                            <button type="button" class="time-btn">14:00</button>
+                            
+                            <button type="button" class="time-btn">15:00</button>
+                            <button type="button" class="time-btn">16:00</button>
+                            <button type="button" class="time-btn">17:00</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- 3. INFORMAÇÕES IMPORTANTES PARA FOTOS -->
+                <div class="form-section-title">3. Informações Importantes Para Fotos :</div>
+                <div class="form-subtitle">Conte-Nos Mais Sobre O Evento Para Podermos Nos Preparar Da Melhor Forma.</div>
+                
+                <textarea class="textarea-beige" name="infos_importantes" placeholder="Escreva Aqui..."></textarea>
+
+                <!-- CHECKBOXES (LOCAIS E MOMENTOS) -->
+                <div class="options-flex">
+                    
+                    <!-- Locais das Fotos -->
+                    <div class="options-column">
+                        <div class="column-title">Locais Das Fotos :</div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="cerimonia" name="local" value="Cerimônia">
+                            <label for="cerimonia">Cerimônia</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="prewedding" name="local" value="Pré-Wedding">
+                            <label for="prewedding">Pré-Wedding</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="ensaio" name="local" value="Ensaio Casal">
+                            <label for="ensaio">Ensaio Casal</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="evento" name="local" value="Evento">
+                            <label for="evento">Evento</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="outro-local" name="local" value="Outro">
+                            <label for="outro-local">Outro</label>
+                            <input type="text" name="local_outro_texto" class="input-text-short">
+                        </div>
+                    </div>
+
+                    <!-- Momentos Especiais -->
+                    <div class="options-column">
+                        <div class="column-title">Momentos Especiais :</div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="aliancas" name="momento" value="Troca de Alianças">
+                            <label for="aliancas">Troca De Alianças</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="entrada" name="momento" value="Entrada da Noiva">
+                            <label for="entrada">Entrada Da Noiva</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="danca" name="momento" value="Primeira Dança">
+                            <label for="danca">Primeira Dança</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="anos15" name="momento" value="15 Anos">
+                            <label for="anos15">15 Anos</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="outro-momento" name="momento" value="Outro">
+                            <label for="outro-momento">Outro</label>
+                            <input type="text" name="momento_outro_texto" class="input-text-short">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OUTRAS INFORMAÇÕES RELEVANTES -->
+                <div class="form-section-title" style="margin-top: 40px;">Outras Informações Relevantes :</div>
+                <div class="form-subtitle">Alguma Informação Extra Que Gostaria De Compartilhar ?</div>
+                <textarea class="textarea-beige" style="height: 60px;" name="infos_extras" placeholder="Alguma Informação Extra Que Gostaria De Compartilhar ?"></textarea>
+
+                <!-- 4. DADOS PARA CONTATO -->
+                <div class="form-section-title" style="margin-top: 40px;">4. Dados Para Contato:</div>
+                
+                <div class="input-contact-group">
+                    <label for="nome-completo">Nome Completo *</label>
+                    <input type="text" id="nome-completo" name="nome" placeholder="Digite Seu Nome Completo..." required>
+                </div>
+
+                <div class="input-contact-group">
+                    <label for="email-contato">E-mail *</label>
+                    <input type="email" id="email-contato" name="email" placeholder="Sua @Gmail.Com" required>
+                </div>
+
+                <div class="input-contact-group">
+                    <label for="whatsapp-contato">WhatsApp</label>
+                    <input type="text" id="whatsapp-contato" name="whatsapp" placeholder="(11)99999-9999">
+                </div>
+
+                <!-- BOTÃO DE ENVIO -->
+                <div class="btn-submit-container">
+                    <button type="submit" class="btn-submit-beige">Enviar Agendamento</button>
+                </div>
+
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
