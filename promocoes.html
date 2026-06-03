@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
 
@@ -33,158 +34,144 @@
             </div>
 
             <ul class="menu" id="menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="promocoes.html">Pacotes</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="logcliente.html">Área do cliente</a></li>
             </ul>
 
         </nav>
+
         <button id="backToTop">
-            
+            ↑
         </button>
     </header>
 
     <main>
 
-    <section class="hero-pacotes">
+        <section class="hero-pacotes">
 
-        <div class="hero-texto">
-            <p>
-                Encontre pacotes ideais
-                <br>
-                para momentos
-                <br>
-                especiais...
-            </p>
-        </div>
+            <div class="hero-overlay">
 
-        <div class="hero-imagem">
-            <img src="img/bannernovop.jpeg" alt="Casal">
-        </div>
-
-    </section>
-
-    <section class="pacotes-page">
-
-        <h1 class="pacotes-title">
-            NOSSOS PACOTES:
-        </h1>
-
-        <div class="pacotes-grid">
-
-            <div class="pacote-card">
-
-                <h3>Plano Essencial</h3>
-
-                <div class="pacote-preco">
-                    R$ 500
-                </div>
-
-                <ul>
-                    <li>1 fotógrafo</li>
-                    <li>Até 2 horas de cobertura</li>
-                    <li>30 fotos editadas</li>
-                </ul>
-
-                <a href="pedido.html" class="pacote-btn">
-                    Enviar pedido
-                </a>
-
-            </div>
-
-            <div class="pacote-card">
-
-                <h3>Plano Premium</h3>
-
-                <div class="pacote-preco">
-                    R$ 1200
-                </div>
-
-                <ul>
-                    <li>Ensaio Pré-Wedding</li>
-                    <li>4 horas de cobertura</li>
-                    <li>100 fotos editadas</li>
-                </ul>
-
-                <a href="pedido.html" class="pacote-btn">
-                    Enviar pedido
-                </a>
-
-            </div>
-
-            <div class="pacote-card">
-
-                <h3>Plano Completo</h3>
-
-                <div class="pacote-preco">
-                    R$ 2500
-                </div>
-
-                <ul>
-                    <li>Making Of</li>
-                    <li>Cerimônia completa</li>
-                    <li>Álbum digital</li>
-                </ul>
-
-                <a href="pedido.html" class="pacote-btn">
-                    Enviar pedido
-                </a>
-
-            </div>
-
-        </div>
-
-        <section class="promo-banner">
-
-            <div class="promo-img">
-                <img src="img/promocao.jpg" alt="Promoção Especial">
-            </div>
-
-            <div class="promo-content">
-
-                <h2>Promoção Especial</h2>
-
-                <h3>10% OFF</h3>
+                <h1>
+                    Eternize seus momentos
+                </h1>
 
                 <p>
-                    Para eventos realizados de segunda a sexta-feira.
+                    Pacotes exclusivos para transformar emoções em memórias.
                 </p>
-
-                <span>
-                    Promoção não acumulativa com outros descontos.
-                </span>
-
-                <a href="pedido.html" class="promo-btn">
-                    Quero Aproveitar
-                </a>
 
             </div>
 
         </section>
 
-    </section>
+        <section class="orcamento-rapido">
 
-</main>
+            <h2>Solicite seu orçamento</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Seu nome">
+
+                <input
+                    type="email"
+                    placeholder="Seu e-mail">
+
+                <input
+                    type="date">
+
+                <button type="submit">
+                    Solicitar
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="servicos">
+
+            <h2>
+                Pacotes personalizados,
+                memórias únicas.
+            </h2>
+
+            <p>
+                Escolha o plano ideal para o seu evento.
+            </p>
+<div class="servicos-grid">
+
+    <div class="servico-card">
+        <i class="fa-solid fa-camera"></i>
+
+        <h3>Pacote Essencial</h3>
+
+        <span class="preco">
+            R$ 499
+        </span>
+
+        <p>
+            Cobertura compacta para momentos especiais.
+        </p>
+    </div>
+
+    <div class="servico-card">
+        <i class="fa-solid fa-heart"></i>
+
+        <h3>Pacote Premium</h3>
+
+        <span class="preco">
+            R$ 899
+        </span>
+
+        <p>
+            Mais horas, mais fotos e mais lembranças.
+        </p>
+    </div>
+
+    <div class="servico-card">
+        <i class="fa-solid fa-ring"></i>
+
+        <h3>Pacote Casamento</h3>
+
+        <span class="preco">
+            R$ 1.499
+        </span>
+
+        <p>
+            Cobertura completa do início ao fim.
+        </p>
+    </div>
+
+</div>
+    </main>
 
     <footer class="footer">
+
         <h2>Rafael Lima Fotografia</h2>
+
         <p>
             Capturando momentos únicos e transformando memórias em arte.
         </p>
+
         <div class="socials">
             <a href="#">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
+
             <a href="#">
                 <i class="fa-brands fa-instagram"></i>
             </a>
+
             <a href="#">
                 <i class="fa-brands fa-facebook-f"></i>
             </a>
         </div>
+
         <span>
             © 2026 Todos os direitos reservados.
         </span>
+
     </footer>
     <script defer src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
