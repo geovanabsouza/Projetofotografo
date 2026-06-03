@@ -142,8 +142,8 @@ p {
 /*BANNER CASAL*/
 
 .bannercasal {
-     width: 300px;
-  height: auto; 
+     width: 100%;
+     height: auto; 
 }
 
 /* Cada slide */
@@ -154,7 +154,7 @@ p {
 /* Imagens */
 .carousel-item img {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -1885,7 +1885,6 @@ body {
 }
 
 .preco{
-
     display:block;
 
     font-size:2rem;
@@ -1898,3 +1897,4 @@ body {
 
     font-family:"Cormorant Garamond", serif;
 }
+
